@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0
+}
+body {
+    height: 100%;
+    background: white;
+    background-repeat: repeat-x;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+    to {
+      text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+}
